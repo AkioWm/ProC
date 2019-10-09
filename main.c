@@ -26,6 +26,8 @@ switch (rep)
 
 case 112:
    printf("Choix 1 \n");
+    char **table;
+    table=createTable();
    break;
 default:
    printf("See you later ! ");
