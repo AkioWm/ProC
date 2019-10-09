@@ -341,6 +341,7 @@ void createTable(){
     int column;
     int row;
 
+
     printf("enter table size(column row)\n");
     scanf( "%d %d",&column,&row );
     table = malloc(row * sizeof(int*));
@@ -403,7 +404,7 @@ void createTable(){
 
     //add x3letter end
 
-        //add x2word begin
+        //add x2letter begin
     int wordx2;
     int rowwordx2;
     int columnwordx2;
@@ -420,9 +421,9 @@ void createTable(){
         table[rowwordx2][columnwordx2]='w';
     }
 
-    //add x2word end
+    //add x2letter end
 
-            //add x3word begin
+            //add x3letter begin
     int wordx3;
     int rowwordx3;
     int columnwordx3;
@@ -443,8 +444,8 @@ void createTable(){
 
     }
 
-    //add x3word end
-    //add negative begin
+    //add x3letter end
+            //add x2letter begin
     int negative;
     int rownegative;
     int columnnegative;
@@ -461,7 +462,7 @@ void createTable(){
         table[rownegative][columnnegative]='N';
     }
 
-    //add negative end
+    //add x2letter end
 
 
 
@@ -469,37 +470,8 @@ void createTable(){
 
 }
 
-void turn(){
-
-    int rep;
-
-    printf("choose your action !(1-next turn 2-place piece 3-leave)");
-    scanf("%d", &rep);
-
-    switch (rep)
-    {
-
-    case 1:
-        printf("Choix 1 \n");
-        turn();
-        break;
-    case 2:
-        printf("Choix 2 \n");
-        turn();
-        break;
-    case 3:
-        printf("Choix 3 \n");
-        exiting();
-        break;
-    default:
-        printf("choose your action !(1-next turn 2-place piece 3-leave)\n");
-        turn();
-}
-
-
-
 void printTable(char **table,int row,int column){
-   system("cls");
+    system("cls");
     for(int i=0;i<row;i++){
         for(int j=0;j<column;j++){
             printf("%c",table[i][j]);
@@ -507,6 +479,38 @@ void printTable(char **table,int row,int column){
         printf("\n");
     }
 }
+
+
+ void turn(int numberturn){
+
+    int rep;
+
+    printf("choose your action player%d !(1-next turn 2-place piece 3-leave)",(numberturn%2)+1);
+    scanf("%d", &rep);
+
+    switch (rep)
+    {
+
+    case 1:
+        printf("Next turn \n");
+        turn(numberturn+1);
+        break;
+    case 2:
+        printf("Choix 2 \n");
+        turn(numberturn+1);
+        break;
+    case 3:
+        printf("Choix 3 \n");
+        exiting();
+        break;
+    default:
+        printf("choose your action !(1-next turn 2-place piece 3-leave)\n");
+        turn(numberturn);
+    }
+
+ }
+
+
 
 void exiting(){
     exit(0);
