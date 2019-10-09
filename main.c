@@ -139,7 +139,7 @@ void createTable(){
 
     //add x3letter end
 
-        //add x2letter begin
+        //add x2word begin
     int wordx2;
     int rowwordx2;
     int columnwordx2;
@@ -156,9 +156,9 @@ void createTable(){
         table[rowwordx2][columnwordx2]='w';
     }
 
-    //add x2letter end
+    //add x2word end
 
-            //add x3letter begin
+            //add x3word begin
     int wordx3;
     int rowwordx3;
     int columnwordx3;
@@ -179,8 +179,8 @@ void createTable(){
 
     }
 
-    //add x3letter end
-            //add x2letter begin
+    //add x3word end
+    //add negative begin
     int negative;
     int rownegative;
     int columnnegative;
@@ -197,13 +197,41 @@ void createTable(){
         table[rownegative][columnnegative]='N';
     }
 
-    //add x2letter end
+    //add negative end
 
 
 
     printTable(table,row,column);
 
 }
+
+void turn(){
+
+    int rep;
+
+    printf("choose your action !(1-next turn 2-place piece 3-leave)");
+    scanf("%d", &rep);
+
+    switch (rep)
+    {
+
+    case 1:
+        printf("Choix 1 \n");
+        turn();
+        break;
+    case 2:
+        printf("Choix 2 \n");
+        turn();
+        break;
+    case 3:
+        printf("Choix 3 \n");
+        exiting();
+        break;
+    default:
+        printf("choose your action !(1-next turn 2-place piece 3-leave)\n");
+        turn();
+}
+
 
 
 void printTable(char **table,int row,int column){
