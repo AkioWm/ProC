@@ -18,7 +18,7 @@ printf("...............................................................\n ");
 printf("\n");
 
 char rep;
-printf("Enter \"p\" to play or an other String to stop the programm\n");
+printf("Enter \"p\" to play or an other String to stop the program\n");
 scanf("%s", &rep);
 
 switch (rep)
