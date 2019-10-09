@@ -214,14 +214,7 @@ void printTable(char **table,int row,int column){
         printf("\n");
     }
 }
-void initTable(char **table,int row,int column){
-    for(int i=0;i<row;i++){
-        for(int j=0;j<column;j++){
-            table[i][j]='.';
 
-        }
-    }
-}
 void exiting(){
     exit(0);
 }
