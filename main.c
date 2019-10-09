@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 
 int main()
 {
@@ -26,7 +26,7 @@ switch (rep)
 
 case 112:
    printf("Choix 1 \n");
-    char **table;
+
     game();
 
    break;
@@ -50,28 +50,67 @@ void game(){
    int joueur1 = 1;
    int joueur2 = 2;
    int index = 0;
-   char main1[8];
-   char main2[8];
+   int main1[27];
+   int main2[27];
+   int exit = 0;
+      for(int i = 0; i < 27; i++){
+         main1[i] = 0;
+      }
+      for (int i = 0; i < 27; i++){
+         main2[i] = 0;
+      }
 
-
-   switch(index){
+      int i = 0;
+      int j = 0; 
+      while(!exit){
+      switch (index)
+      {
 
       case 0:
-         createTable();
-         index++;
-         break;
+        // createTable();
+        
+        index++;
+        break;
       case 1:
-         for (int i = 0; i < 7; i++)
-         {
-            int r = rand() % 7;
-         }
-   
-   
-   
-   }
+         i = 0;
 
-   
+         while (i < 7)
+         {
+            int r = rand() % 27;
+            if (value[r] != 0)
+            {
+               value[r] -= 1;
+               main1[r] += 1;
+               i++;
+            }
+            j++;
+      }
+      i = 0;
+
+      while (i < 7){
+         int r = rand() % 27;
+         if (value[r] != 0)
+         {
+            value[r] -= 1;
+            main2[r] += 1;
+            i++;
+         }
+
+      }
+      index++;
+      break;
+      /////////////// En construction //////////////////
+      case 2:
+
+      exit = 1;
+      break;
+
+   }
+      }
+      /////////////////////////////////////////////////
+
 }
+
 void createTable(){
     char **table;
     int column;
