@@ -294,5 +294,3 @@ void turn()
    {
       exit(0);
    }
-
-
