@@ -26,6 +26,8 @@ switch (rep)
 
 case 112:
    printf("Choix 1 \n");
+    char **table;
+    table=createTable();
    break;
 default:
    printf("See you later ! ");
@@ -36,6 +38,43 @@ return 0;
 
    // exiting();
 
+}
+void createTable(){
+    char **table;
+    int column;
+    int row;
+
+    printf("enter table size(column row)\n");
+    scanf( "%d %d",&column,&row );
+    table = malloc(row * sizeof(int*));
+    for(int i = 0; i < row; i++){
+        table[i] = malloc(column * sizeof(int));
+    }
+    for(int i=0;i<row;i++){
+        for(int j=0;j<column;j++){
+            table[i][j]='.';
+
+        }
+    }
+    printTable(table,row,column);
+
+}
+
+void printTable(char **table,int row,int column){
+    for(int i=0;i<row;i++){
+        for(int j=0;j<column;j++){
+            printf("%c",table[i][j]);
+        }
+        printf("\n");
+    }
+}
+void initTable(char **table,int row,int column){
+    for(int i=0;i<row;i++){
+        for(int j=0;j<column;j++){
+            table[i][j]='.';
+
+        }
+    }
 }
 void exiting(){
     exit(0);
