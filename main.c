@@ -207,6 +207,7 @@ void createTable(){
 
 
 void printTable(char **table,int row,int column){
+   system("cls");
     for(int i=0;i<row;i++){
         for(int j=0;j<column;j++){
             printf("%c",table[i][j]);
