@@ -3,7 +3,10 @@
 
 int main()
 {
-    printf("Hello world! \n");
-    return 0;
+    
+    exiting();
 
+}
+void exiting(){
+    exit(0);
 }
