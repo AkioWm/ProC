@@ -41,9 +41,36 @@ return 0;
 
 }
 
+
+
 void game(){
+   char letter[27] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '&'};
+   int value[27] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 10, 1, 2, 1, 1, 3, 8, 1, 1, 1, 1, 4, 10, 10, 10, 10, 0};
+   int piece[27] = {9, 2, 2, 3, 15, 2, 2, 2, 8, 1, 1, 5, 3, 6, 6, 2, 1, 6, 6, 6, 6, 2, 1, 1, 1, 1, 2};
+   int joueur1 = 1;
+   int joueur2 = 2;
+   int index = 0;
+   char main1[8];
+   char main2[8];
+
+
+   switch(index){
+
+      case 0:
+         createTable();
+         index++;
+         break;
+      case 1:
+         for (int i = 0; i < 7; i++)
+         {
+            int r = rand() % 7;
+         }
    
-   createTable();
+   
+   
+   }
+
+   
 }
 void createTable(){
     char **table;
