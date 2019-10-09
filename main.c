@@ -15,9 +15,10 @@ printf("|   __|  _| . | | | -_|  _|  |   --|  _| .'| . | . | | -_| \n ");
 printf("|__|  |_| |___|_| |___|_|    |_____|_| |__,|___|___|_|___| \n ");
 printf("              |___|                                        \n");
 printf("...............................................................\n ");
+printf("\n");
 
 char rep;
-printf("Entrer sur \"p\" pour jouer ou une autre touche pour arrêter le programme\n");
+printf("Enter \"p\" to play or an other String to stop the programm\n");
 scanf("%s", &rep);
 
 switch (rep)
