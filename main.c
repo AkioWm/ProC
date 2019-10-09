@@ -2,31 +2,40 @@
 #include <stdlib.h>
 
 
-
 int main()
 {
-   char rep;
-   printf("Entrer sur \"p\" pour jouer ou une autre touche pour arrêter le programme\n");
-   scanf("%s",&rep);
 
-   switch (rep)
-   {
 
-   case 112:
-      printf("Choix 1 \n");
-      break;
-   default:
+printf(" \n ");
+printf(" \n ");
+printf("...............................................................\n ");
+printf(" _____           _     _      _____         _   _   _      \n ");
+printf("|  _  |___ ___  |_|___| |_   |     |___ ___| |_| |_| |___   \n ");
+printf("|   __|  _| . | | | -_|  _|  |   --|  _| .'| . | . | | -_| \n ");
+printf("|__|  |_| |___|_| |___|_|    |_____|_| |__,|___|___|_|___| \n ");
+printf("              |___|                                        \n");
+printf("...............................................................\n ");
+
+char rep;
+printf("Entrer sur \"p\" pour jouer ou une autre touche pour arrêter le programme\n");
+scanf("%s", &rep);
+
+switch (rep)
+{
+
+case 112:
+   printf("Choix 1 \n");
+   break;
+default:
    printf("Au Revoir");
    exit(0);
+}
+return 0;
 
-    }
 
+   // exiting();
 
-   // printf("Enter name: ");
-   // scanf("%s", str1);
-   // printf("Entered Name: %s\n", str1);
-   // printf("Entered Website:%s", str2);
-
-   return(0);
-
+}
+void exiting(){
+    exit(0);
 }
