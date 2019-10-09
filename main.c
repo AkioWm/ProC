@@ -28,7 +28,7 @@ case 112:
    printf("Choix 1 \n");
    break;
 default:
-   printf("Au Revoir");
+   printf("See you later ! ");
    exit(0);
 }
 return 0;
