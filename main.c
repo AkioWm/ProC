@@ -100,7 +100,12 @@ void game()
          break;
       /////////////// En construction //////////////////
       case 2:
-
+      printf("\n Joueur 1:   ");
+         for (int i = 0; i < 27; i++){
+            if (main1[i] != 0){
+               printf("%c: %d |", letter[i], main1[i]);
+            }
+         }
          exit = 1;
          break;
       }
