@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1570667175 source:c:\users\cheik\c\proc\main.c
+1570669573 source:c:\users\cheik\c\proc\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>

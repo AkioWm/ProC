@@ -66,7 +66,7 @@ void game()
       {
 
       case 0:
-         // createTable();
+          createTable();
 
          index++;
          break;
