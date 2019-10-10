@@ -136,7 +136,11 @@ void createTable()
    }
 
    totalcells = column * row;
+<<<<<<< HEAD
    printf("Size %d x %d  for a total of %d cells \n", column, row, totalcells);
+=======
+    printf("Size %d x %d  for a total of %d cells \n",column, row, totalcells);
+>>>>>>> 4db0e4c2f94e997dec54742e6c53422cfcf44d27
 
    //addstar start
    int rowstar;
@@ -153,6 +157,7 @@ void createTable()
    int rowletterx2;
    int columnletterx2;
    int maxletterx2;
+<<<<<<< HEAD
    maxletterx2 = totalcells / 10;
    printf("Number of letter x2 ? must be inferior to %d \n", maxletterx2);
    scanf("%d", &letterx2);
@@ -160,6 +165,15 @@ void createTable()
    {
       letterx2 = maxletterx2;
    }
+=======
+    maxletterx2 = totalcells / 10;
+    printf("Number of letter x2 ? must be inferior to %d \n", maxletterx2);
+    scanf( "%d",&letterx2);
+    if (letterx2>maxletterx2){
+        letterx2=maxletterx2;
+
+    }
+>>>>>>> 4db0e4c2f94e997dec54742e6c53422cfcf44d27
    for (int i = 0; i < letterx2; i++)
    {
       rowletterx2 = rand() % row;
@@ -178,6 +192,7 @@ void createTable()
    int rowletterx3;
    int columnletterx3;
    int maxletterx3;
+<<<<<<< HEAD
    maxletterx3 = totalcells / 20;
    printf("Number of letter x3 ? must be inferior to %d \n", maxletterx3);
    scanf("%d", &letterx3);
@@ -185,6 +200,14 @@ void createTable()
    {
       letterx3 = maxletterx3;
    }
+=======
+    maxletterx3 = totalcells / 20;
+    printf("Number of letter x3 ? must be inferior to %d \n", maxletterx3);
+    scanf( "%d",&letterx3);
+    if (letterx3>maxletterx3){
+        letterx3=maxletterx3;
+    }
+>>>>>>> 4db0e4c2f94e997dec54742e6c53422cfcf44d27
    for (int i = 0; i < letterx3; i++)
    {
       rowletterx3 = rand() % row;
@@ -206,6 +229,7 @@ void createTable()
    int rowwordx2;
    int columnwordx2;
    int maxwordx2;
+<<<<<<< HEAD
    maxwordx2 = (totalcells * 16) / 225;
    printf("Number of word x2 ? must be inferior to %d \n", maxwordx2);
    scanf("%d", &wordx2);
@@ -213,6 +237,15 @@ void createTable()
    {
       wordx2 = maxwordx2;
    }
+=======
+    maxwordx2 = (totalcells *16) / 225;
+    printf("Number of word x2 ? must be inferior to %d \n", maxwordx2);
+    scanf( "%d",&wordx2);
+    if (wordx2>maxwordx2){
+        wordx2=maxwordx2;
+
+    }
+>>>>>>> 4db0e4c2f94e997dec54742e6c53422cfcf44d27
    for (int i = 0; i < wordx2; i++)
    {
       rowwordx2 = rand() % row;
@@ -231,6 +264,7 @@ void createTable()
    int wordx3;
    int rowwordx3;
    int columnwordx3;
+<<<<<<< HEAD
    int maxwordx3;
    maxwordx3 = (totalcells * 8) / 225;
    printf("Number of word x3 ? must be inferior to %d \n", maxwordx3);
@@ -239,6 +273,15 @@ void createTable()
    {
       wordx3 = maxwordx3;
    }
+=======
+  int maxwordx3;
+    maxwordx3 = (totalcells *8) / 225;
+    printf("Number of word x3 ? must be inferior to %d \n", maxwordx3);
+    scanf( "%d",&wordx3);
+    if (wordx3>maxwordx3){
+        wordx3=maxwordx3;
+    }
+>>>>>>> 4db0e4c2f94e997dec54742e6c53422cfcf44d27
    for (int i = 0; i < wordx3; i++)
    {
       rowwordx3 = rand() % row;
@@ -259,6 +302,7 @@ void createTable()
    int rownegative;
    int columnnegative;
    int maxnegative;
+<<<<<<< HEAD
    maxnegative = totalcells / 20;
    printf("Number of negative cells ? must be inferior to %d \n", maxnegative);
    scanf("%d", &negative);
@@ -266,6 +310,14 @@ void createTable()
    {
       negative = maxnegative;
    }
+=======
+    maxnegative = totalcells / 20;
+    printf("Number of negative cells ? must be inferior to %d \n", maxnegative);
+    scanf( "%d",&negative);
+    if (negative>maxnegative){
+        negative=maxnegative;
+    }
+>>>>>>> 4db0e4c2f94e997dec54742e6c53422cfcf44d27
    for (int i = 0; i < negative; i++)
    {
       rownegative = rand() % row;
